@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* MainWindow */
+
+QMainWindow {
+  width: 1920px;
+  height: 1080px;
+}
+
+/* container */
+QWidget#container {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  background-color: #f0f0f0; /* Couleur de fond pour le conteneur */
+}
+
+/* card */
+QWidget#card {
+  background-color: #4CAF50; /* Couleur de fond pour la carte */
+  padding: 20px;
+  border-radius: 16px; /* Border-radius plus prononcé */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+/* titleLabel */
+QLabel#titleLabel {
+  text-align: center;
+  color: #333;
+  font: 18pt &quot;Arial&quot;, sans-serif; /* Exemple de police : Arial */
+}
+
+/* form */
+QWidget#form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes pour aligner les éléments */
+  gap: 20px; /* Espace entre les éléments */
+}
+
+/* label */
+QLabel {
+  color: #333;
+  font-size: 14px;
+  font-family: &quot;Helvetica&quot;, sans-serif; /* Exemple de police : Helvetica */
+}
+
+/* textInput */
+QLineEdit {
+  padding: 12px;
+  border: 2px solid #ccc; /* Couleur de bordure plus douce */
+  border-radius: 20px;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #333;
+  border-style: outset; /* Contour en relief */
+  border-width: 3px; /* Largeur du contour */
+  font-family: &quot;Times New Roman&quot;, serif; /* Exemple de police : Times New Roman */
+}
+
+QLineEdit:focus {
+  border-color: #a5783d;
+}
+
+/* submitButton */
+QPushButton#submitButton {
+  background-color: #007a4d; /* Vert stylé associé aux assurances */
+  color: #ffeacc;
+  padding: 12px;
+  border: 3px solid #005734; /* Contour vert */
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 18pt &quot;Courier New&quot;, monospace; /* Exemple de police : Courier New */
+}
+
+QPushButton#submitButton:hover {
+  background-color: #005734; /* Variation de couleur au survol */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="container" native="true">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>871</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Style.qss */
+
+body {
+  font-family: &quot;Arial&quot;, sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ffa07a; /* Warna orange cerah */
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  color: #333;
+}
+
+input:focus {
+  border-color: #ff8c00; /* Warna orange saat focus */
+}
+
+button {
+  background-color: #ff8c00; /* Warna orange cerah */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff7f00; /* Warna orange sedikit lebih gelap saat hover */
+}
+</string>
+    </property>
+    <widget class="QWidget" name="card" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>881</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 8pt &quot;Courier New&quot;;</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>10</y>
+        <width>501</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 28pt &quot;Courier New&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Authentification</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="form" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>861</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <widget class="QLineEdit" name="textInput">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>831</width>
+         <height>51</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="submitButton">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>350</y>
+         <width>221</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;Courier New&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>130</y>
+         <width>821</width>
+         <height>61</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>55</y>
+         <width>381</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Adresse Mail :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>211</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;Times New Roman&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Mot de passe : </string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

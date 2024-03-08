@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/agent.svg</file>
+        <file>img/click.wav</file>
+        <file>img/client.svg</file>
+        <file>img/Contrat.svg</file>
+        <file>img/email.svg</file>
+        <file>img/evenements.png</file>
+        <file>img/home.svg</file>
+        <file>img/logo.png</file>
+        <file>img/menu-hamburger-svgrepo-com.svg</file>
+        <file>img/pdf.svg</file>
+        <file>img/recherche.svg</file>
+        <file>img/reclamer.png</file>
+        <file>img/stat.svg</file>
+        <file>img/tri.svg</file>
+        <file>img/tri_asc.svg</file>
+        <file>img/tri_desc.svg</file>
+        <file>img/backg.jpg</file>
+        <file>img/backgx.jpg</file>
+        <file>img/agent (1).png</file>
+        <file>img/dark-mode.png</file>
+        <file>img/refresh.svg</file>
+    </qresource>
+</RCC>

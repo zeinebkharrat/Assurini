@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main</class>
+ <widget class="QWidget" name="main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Set box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set styles for the main container */
+QMainWindow {
+  width: 1920px;
+  height: 1080px;
+}
+
+/* Set styles for the form container */
+QWidget#form {
+  font-family: &quot;Helvetica, sans-serif&quot;;
+  color: #666;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+  padding: 20px;
+  display: grid;
+  box-shadow: 0px 0px 4px #cecece;
+  justify-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Set styles for labels */
+QLabel#titleLabel,
+QLabel#addressLabel,
+QLabel#passwordLabel {
+  margin: 0 0 10px 0;
+}
+
+/* Set styles for input fields */
+QLineEdit#textEdit,
+QLineEdit#passwordEdit {
+  height: 45px;
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+/* Set styles for links and anchor tags */
+QLabel#forgotLabel,
+QLabel#linkLabel {
+  font-size: 11px;
+  font-family: sans-serif;
+  color: #71def2;
+  margin: 7px 0 15px 3px;
+  text-decoration: none;
+}
+
+QLabel#linkLabel:hover {
+  color: #3d828e;
+}
+
+/* Set styles for buttons */
+QPushButton#submitButton {
+  width: 93px;
+  height: 28px;
+  border-radius: 14px;
+  border: 1px solid #3d828e;
+  background: #54b7c9;
+  margin: 0 auto;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 0;
+  justify-items: center;
+}
+
+QPushButton#submitButton:hover {
+  background: #71def2;
+}
+
+QPushButton#submitButton:focus {
+  font-weight: bold;
+  background: #71def2;
+  width: 90px;
+}
+
+/* Set styles for form divisions */
+QWidget#formDiv {
+  width: 90%;
+  margin: 10px 0;
+}
+
+/* Set styles for circles */
+
+QWidget#circleWidget {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+  padding: 20px;
+  display: grid;
+  box-shadow: 0px 0px 4px #cecece;
+  position: absolute;
+  top: 520px; /* Ajustez cette valeur en fonction de votre disposition */
+  left: 810px; /* Ajustez cette valeur en fonction de votre disposition */
+}
+
+
+QWidget#limeCircle,
+QWidget#aquaCircle {
+  width: 120px;
+  height: 80px;
+}
+
+QWidget#limeCircle {
+  background: #A8F781;
+  top: 40px;
+  left: 20px;
+  opacity: 0.7;
+}
+
+QWidget#aquaCircle {
+  background: #71def2;
+  top: 60px;
+  left: 140px;
+  opacity: 0.7;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="form" native="true">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>520</y>
+     <width>401</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="addressLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passwordLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>110</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordEdit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>190</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="submitButton">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>230</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="circleWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>200</y>
+     <width>400</width>
+     <height>400</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="limeCircle" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="aquaCircle" native="true">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>160</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
